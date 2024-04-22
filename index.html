@@ -25,16 +25,10 @@
         <script type="module">
             import { Application } from '@splinetool/runtime';
 
-            // El elemento canvas con id="canvas3d" ya está definido en el HTML
-            const canvas = document.getElementById('canvas3d');
+const canvas = document.getElementById('canvas3d');
+const app = new Application(canvas);
+app.load('https://prod.spline.design/GoYt8rYu9NVdCqkd/scene.splinecode');
 
-            // Verifica que el canvas no sea nulo
-            if (canvas) {
-                const app = new Application(canvas);
-                app.load('https://prod.spline.design/GoYt8rYu9NVdCqkd/scene.splinecode');
-            } else {
-                console.error('No se encontró el elemento canvas');
-            }
         </script>
     </div>
 </body>
